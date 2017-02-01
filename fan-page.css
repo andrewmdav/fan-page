@@ -1,16 +1,45 @@
-body {
-    background-color: turquoise;
-    color: white
-}
-
-h1 {
-    color: blanchedalmond
-}
-
-#divcolor {
-    color: teal
-}
-
-.feature {
-    background-color: aqua
-}
+    body {
+        background-color: turquoise;
+        color: white;
+        font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    }
+    
+    h1 {
+        color: blanchedalmond;
+        text-transform: uppercase;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    }
+    
+    #divcolor {
+        background-color: teal
+    }
+    
+    .feature {
+        color: yellow
+    }
+    
+    footer {
+        font-size: 85%;
+        font-style: italic
+    }
+    
+    ul {
+        list-style: square
+    }
+    
+    p a {
+        font-weight: bold;
+        font-size: 105%;
+        text-decoration: none;
+    }
+    
+    #divBackPic {
+        background-image: url(images/Lego%20Falcon.JPG);
+        background-repeat: round;
+        background-size: contain;
+    }
