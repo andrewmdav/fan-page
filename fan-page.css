@@ -59,12 +59,12 @@ footer {
     margin-right: auto;
 }
 
-a:visited {
-    color: #9A9A9A;
+body a {
+    color: #E5E5E5;
 }
 
-footer a {
-    color: #F7D600;
+body a:visited {
+    color: #9A9A9A;
 }
 
 ul {
@@ -77,7 +77,6 @@ p a {
     font-weight: bold;
     font-size: 105%;
     text-decoration: none;
-    color: #E5E5E5;
 }
 
 #divBackPic {
