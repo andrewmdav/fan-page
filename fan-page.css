@@ -9,6 +9,18 @@ body {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
+main a:link {
+    color: #E5E5E5;
+}
+
+main a:visited {
+    color: #9A9A9A;
+}
+
+main a:hover {
+    color: #FFFFFF;
+}
+
 nav ul {
     list-style: none;
     float: left;
@@ -16,6 +28,21 @@ nav ul {
     position: fixed;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 110%;
+    color: #FFBB21;
+}
+
+nav ul a:link {
+    color: #FFBB21;
+    text-decoration: none;
+}
+
+nav ul a:visited {
+    color: #FFFFFF;
+}
+
+nav ul a:hover {
+    color: #9A9A9A;
 }
 
 body p {
@@ -59,12 +86,16 @@ footer {
     margin-right: auto;
 }
 
-body a {
-    color: #E5E5E5;
+footer a:link {
+    color: #9A9A9A;
 }
 
-body a:visited {
-    color: #9A9A9A;
+footer a:visited {
+    color: #9F6E00;
+}
+
+footer a:hover {
+    color: #FFAF21;
 }
 
 ul {
@@ -120,7 +151,7 @@ h3 {
 
 #familyBackgroundImage {
     background-image: url(images/Lego%20Choppers.JPG);
-    background-position: bottom right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: 150px 150px;
     text-align: left;
@@ -144,4 +175,90 @@ h3 {
 
 .floatClear {
     clear: both;
+}
+
+
+/*tablet display*/
+
+@media only screen and (max-width: 83em) {
+    nav ul {
+        float: none;
+        width: auto;
+        text-align: center;
+        position: relative;
+    }
+    nav li {
+        display: inline;
+        margin: 5px 10px 5px 10px;
+    }
+    body p {
+        padding: 0;
+    }
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+    main {
+        padding: 0;
+        margin: 0;
+    }
+    .imagePosition {
+        display: inline;
+        position: relative;
+        left: 10px;
+    }
+}
+
+
+/*smartphone display*/
+
+@media only screen and (max-width:37.5em) {
+    body {
+        margin: 0;
+    }
+    h1 {
+        font-size: 160%;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 140%;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    nav {
+        background-color: #7F0000;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: solid black;
+    }
+    nav a {
+        display: block;
+        margin: 0;
+    }
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #mainContent {
+        margin-top: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #familyBackgroundImage {
+        background-image: none;
+    }
+    .imagePosition {
+        display: inline;
+        position: relative;
+        left: 0px;
+    }
 }
